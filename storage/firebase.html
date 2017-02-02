@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Firebase Storage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+    <link href="custom.css" rel="stylesheet" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body >
+<p>Welcome Firbase POC</p>
+
+<div>
+	<progress value="0" max="100" id="uploader"> 0%</progress>
+	<input type="file" value="upload" id="fileBtn" />
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyBDImBgJXitpsP8rHDGsz1jH8fMfL_tdPQ",
+        authDomain: "legaldial-6e 184.firebaseapp.com",
+        databaseURL: "https://legaldial-6e184.firebaseio.com",
+        storageBucket: "legaldial-6e184.appspot.com",
+        messagingSenderId: "666611957585"
+    };
+    firebase.initializeApp(config);
+</script>
+
+<script src="./custom-scripts.js"></script>
+</body>
+
+</html>
